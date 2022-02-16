@@ -25,5 +25,52 @@ Characteristics and Features
 5. Scriptable interaction with the target – using Nmap Scripting Engine(NSE) and Lua programming language.
 6. Nmap can provide further information on targets, including reverse DNS names, device types, and MAC addresses.
 
+# python3-nmap
+A python 3 library which helps in using nmap port scanner. The way this tools works is by defining each nmap command into a python function making it very easy to use sophisticated nmap commands in other python scripts. Nmap is a complicated piece of software used for reconnaissance on target networks, over the years new features have been added making it more sophisticated. With this python3-nmap we make using nmap in python very easy and painless For example in nmap if you want to scan for common ports you would to something like this
+
+$ nmap your-host.com --top-ports 10
+
+But in this python3 script again it's very easy you just do something like this,
+
+
+
+    import nmap3
+    nmap = nmap3.Nmap()
+    results = nmap.nmap_dns_brute_script("your-host.com")
+
+
+
+And you would get your results in json
+
+
+    {
+        "address": "mail.your-host.com",
+        "hostname": "68.65.122.10"
+    },
+    
+    {
+        "address": "www.your-host.com",
+        "hostname": "5.189.129.43"
+    }
+   
+
+
+How to use python3-nmap
+
+Using this scripts is very easy, though it assumes you have nmap already installed, as it is the primary dependence required. Also this tools supports both windows and linux, it's cross platform so to say.
+
+Installation
+
+$ git clone https://github.com/wangoloj/python3-nmap.git
+
+$ pip3 install -r requirements.txt
+
+$ Install nmap online
+
+$ apt-get install nmap
+
+
+
+
 
 
