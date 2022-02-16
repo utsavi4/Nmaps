@@ -3,6 +3,20 @@ Introduction
 
 Nmap is short for Network Mapper. It is an open-source security tool for network exploration, security scanning, and auditing. However, the Nmap command comes with lots of options that can make the utility more robust and difficult to follow for new users. The purpose of this guide is to introduce a user to the Nmap command line tool to scan a host or network to find out the possible vulnerable points in the hosts. You will also learn how to use Nmap for offensive and defensive purposes. 
 
+Nmap Command Examples in Linux and Unix – Sample setup (LAB) for
+Port scanning 
+                              +---------+
+        +---------+           | Network |         +--------+
+        | server1 |-----------+ swtich  +---------|server2 |
+        +---------+           | (sw0)   |         +--------+
+                              +----+----+
+                                   | 
+                                   |
+                         +---------+----------------+
+                         | wks01 Linux/macOS/Win    |
+                         +--------------------------+
+
+
 Utility
 
  It was designed to rapidly scan large networks, although it works fine against single hosts. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. While Nmap is commonly used for security audits, many systems and network administrators find it useful for routine tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. It is seldom used to answer the following questions:
@@ -58,7 +72,6 @@ And you would get your results in json
 How to use python3-nmap
 
 Using this scripts is very easy, though it assumes you have nmap already installed, as it is the primary dependence required. Also this tools supports both windows and linux, it's cross platform so to say.
-
 
 
 
