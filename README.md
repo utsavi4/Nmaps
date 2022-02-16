@@ -59,15 +59,6 @@ How to use python3-nmap
 
 Using this scripts is very easy, though it assumes you have nmap already installed, as it is the primary dependence required. Also this tools supports both windows and linux, it's cross platform so to say.
 
-Installation
-
-$ git clone https://github.com/wangoloj/python3-nmap.git
-
-$ pip3 install -r requirements.txt
-
-$ Install nmap online
-
-$ apt-get install nmap
 
 
 
